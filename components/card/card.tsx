@@ -1,8 +1,8 @@
-import { FlatList, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { CardProps } from "./types";
 
-const Card = ({ children, style }: CardProps) => {
-	return <View style={StyleSheet.compose(styles.container, style)}>{children}</View>;
+const Card = ({ style, ...props }: CardProps) => {
+	return <View style={StyleSheet.compose(styles.container, style)} {...props} />;
 };
 
 export const styles = StyleSheet.create({

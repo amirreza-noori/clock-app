@@ -1,7 +1,3 @@
-import { ReactNode } from "react";
-import { StyleProp, ViewStyle } from "react-native";
+import { ViewProps } from "react-native";
 
-export type CardProps = {
-	children: ReactNode;
-	style?: StyleProp<ViewStyle>;
-};
+export type CardProps = ViewProps;

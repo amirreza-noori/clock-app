@@ -30,7 +30,7 @@ export default function WorldWideScreen() {
 					<TouchableOpacity key={country} onPress={() => setTimeZone(country)}>
 						<Card
 							style={StyleSheet.compose(styles.item, {
-								backgroundColor: country === timeZone ? "lightblue" : undefined,
+								backgroundColor: country === timeZone ? "lightblue" : "white",
 							})}
 						>
 							<Text>{country}</Text>
